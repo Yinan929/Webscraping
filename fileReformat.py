@@ -2,8 +2,8 @@
 
 from sets import Set
 
-src = open("/Users/RuiZ/Desktop/missingData.txt", "r")
-target = open("/Users/RuiZ/Desktop/dataMissingAtc.txt", "a")
+src = open("missingData.txt", "r")
+target = open("dataMissingAtc.txt", "a")
 
 allWords = src.readlines()[0].split(" ")
 
