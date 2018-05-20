@@ -7,10 +7,10 @@ import time
 
 
 # print "hello world"
-f = open("/Users/RuiZ/Desktop/URLs.txt", "a")
+f = open("URLs.txt", "a")
 
 # get all the URLs
-def hallelujah():
+def main():
 	print "Ready to start driver\n"
 
 	driver = webdriver.Chrome("/usr/local/bin/chromedriver")
@@ -93,8 +93,8 @@ def processTable(driver):
 		rowNum += 1
 	return toWrite
 
-urlFailures = open("/Users/RuiZ/Desktop/URLfalilure.txt", "a")
-senators = open("/Users/RuiZ/Desktop/senators.txt", "a")
+urlFailures = open("URLfalilure.txt", "a")
+senators = open("senators.txt", "a")
 
 def processParagraph(driver):
 	allPara= driver.find_elements_by_css_selector('p')
@@ -198,7 +198,7 @@ def getSenators(url):
 	driver.close()
 
 
-with open("/Users/RuiZ/Desktop/URLs.txt") as f:
+with open("URLs.txt") as f:
 	count = 1
 	for line in f:
 		getSenators(line[:-1])
@@ -489,5 +489,5 @@ def scrapeCurrentPage(epsName, driver, epsCode):
 
 	return False
 
-#hallelujah()
+main()
 f.close()
