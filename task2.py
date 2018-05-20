@@ -7,11 +7,11 @@ import time
 
 
 # print "hello world"
-f = open("/Users/RuiZ/Desktop/task2.txt", "a")
-log = open("/Users/RuiZ/Desktop/log.txt", "a")
-missingData = open("/Users/RuiZ/Desktop/missingData.txt", "a")
+f = open("task2.txt", "a")
+log = open("log.txt", "a")
+missingData = open("missingData.txt", "a")
 
-def hallelujah():
+def main():
 
 		# LAST ATC CODE: V08CA01
 
@@ -136,7 +136,7 @@ def process(atcNum, codeList, driver):
 
 
 def getAtc():
-	f = open("/Users/RuiZ/Desktop/atc.txt", "r")
+	f = open("atc.txt", "r")
 	content = f.readlines()
 	lst = []
 	for item in content:
@@ -146,7 +146,7 @@ def getAtc():
 	return lst
 
 
-hallelujah()
+main()
 f.close()
 log.close()
 missingData.close()
