@@ -6,10 +6,9 @@ from selenium.webdriver.common.by import By
 import time
 
 
-# print "hello world"
-f = open("/Users/RuiZ/Desktop/task1.txt", "a")
+f = open("task1.txt", "a")
 
-def hallelujah():
+def main():
 
 	# iterate over all the EPS
 	for i in range(51, 100): 
@@ -279,5 +278,5 @@ def scrapeCurrentPage(epsName, driver, epsCode):
 
 	return False
 
-hallelujah()
+main()
 f.close()
